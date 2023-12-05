@@ -174,19 +174,12 @@
   align-items: center;
 }
 
-.contenedor_seccion4_cont1 ul li {
+.contenedor_seccion4_cont1_lista, .contenedor_seccion4_cont3_lista, .contenedor_seccion4_cont2_lista {
   font-size: 1.4rem;
   width: 90%;
 }
 
-.contenedor_seccion4_cont2 ul li {
-  font-size: 1.4rem;
-  width: 90%;
-}
-
-.contenedor_seccion4_cont3 ul li {
-  font-size: 1.4rem;
-  width: 90%;
+.contenedor_seccion4_cont3_lista {
   margin-right: 170px;
 }
 
@@ -214,8 +207,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300;
-  height: 300;
+  width: 300px;
+  height: 150px;
   background-color: white;
   border-radius: 50%;
 }

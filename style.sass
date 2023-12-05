@@ -118,23 +118,20 @@ $border-color: #AEBBC7
     &_cont3
         @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
 
-.contenedor_seccion4_cont1 ul li 
+.contenedor_seccion4_cont1_lista
     font-size: 1.4rem
     width: 90%
 
-.contenedor_seccion4_cont2 ul li 
-    font-size: 1.4rem
-    width: 90%
+.contenedor_seccion4_cont2_lista
+    @extend .contenedor_seccion4_cont1_lista
 
-.contenedor_seccion4_cont3 ul li 
-    font-size: 1.4rem
-    width: 90%
+.contenedor_seccion4_cont3_lista
+    @extend .contenedor_seccion4_cont1_lista
     margin-right: 170px
 
+
 .footer
-    @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
-    width: 100%
-    height: 320px
+    @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 100%, $param6: 320px)
     gap: 30px
     background-color: $bg-darkblue
     &_titulo
@@ -147,7 +144,7 @@ $border-color: #AEBBC7
         padding: 10px
         color: $border-color
     &_img
-        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 300, $param6: 300)
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 300px, $param6: 150px)
         background-color: white
         border-radius: 50%
         &_logo
