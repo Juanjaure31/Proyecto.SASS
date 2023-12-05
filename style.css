@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  top: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.barraNavegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #AEBBC7;
+}
+.barraNavegacion_logo {
+  width: 250px;
+}
+.barraNavegacion_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+.barraNavegacion_menu_lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-right: 1px solid #AEBBC7;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.barraNavegacion_menu_lista:hover {
+  background: #AEBBC7;
+}
+
+.barraNavegacion_menu_lista img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.contenedor {
+  width: 100%;
+}
+.contenedor_seccion1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contenedor_seccion1_background {
+  width: 60%;
+}
+
+.contenedor_seccion2 {
+  background: #2C3E50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+}
+.contenedor_seccion2_seguimiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 15px;
+  margin-left: 200px;
+}
+.contenedor_seccion2_seguimiento_img {
+  width: 80px;
+}
+.contenedor_seccion2_seguimiento_input {
+  width: 250px;
+  height: 35px;
+  margin-top: 20px;
+  outline: none;
+}
+.contenedor_seccion2_seguimiento_input:focus {
+  border-color: #FE7019;
+}
+.contenedor_seccion2_seguimiento_boton {
+  width: 100px;
+  height: 35px;
+  background-color: #d35e15;
+  border: none;
+}
+.contenedor_seccion2_seguimiento_boton:hover {
+  background-color: #FE7019;
+}
+.contenedor_seccion2_seguimiento_parrafo {
+  padding-top: 20px;
+  width: 70%;
+  color: white;
+}
+.contenedor_seccion2_busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 15px;
+  margin-right: 200px;
+}
+
+.contenedor_seccion3 {
+  background-color: #F0F1F1;
+}
+.contenedor_seccion3_contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contenedor_seccion3_titulo {
+  color: #2C3E50;
+  font-size: 2rem;
+  padding: 20px;
+}
+.contenedor_seccion3_parrafo {
+  color: gray;
+  font-size: 1.1rem;
+}
+.contenedor_seccion3_celeritas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+}
+.contenedor_seccion3_celeritas img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contenedor_seccion3_celeritas div p {
+  width: 300px;
+}
+
+.contenedor_seccion4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.contenedor_seccion4_titulo {
+  font-size: 2rem;
+  color: #2C3E50;
+  padding: 40px;
+}
+.contenedor_seccion4_cont1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_seccion4_cont1_img {
+  border: 2px solid #AEBBC7;
+  box-shadow: 0px 2px 8px rgb(122, 122, 122);
+}
+.contenedor_seccion4_cont2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_seccion4_cont3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor_seccion4_cont1 ul li {
+  font-size: 1.4rem;
+  width: 90%;
+}
+
+.contenedor_seccion4_cont2 ul li {
+  font-size: 1.4rem;
+  width: 90%;
+}
+
+.contenedor_seccion4_cont3 ul li {
+  font-size: 1.4rem;
+  width: 90%;
+  margin-right: 170px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 320px;
+  gap: 30px;
+  background-color: #2C3E50;
+}
+.footer_titulo {
+  padding: 30px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.footer_lista {
+  list-style: none;
+  padding: 10px;
+  color: #AEBBC7;
+}
+.footer_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300;
+  height: 300;
+  background-color: white;
+  border-radius: 50%;
+}
+.footer_img_logo {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */

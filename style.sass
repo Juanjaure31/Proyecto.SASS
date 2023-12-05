@@ -1,0 +1,158 @@
+*
+    box-sizing: border-box
+    top: 0px
+    margin: 0px
+    font-family: sans-serif
+
+$bg-darkblue: #2C3E50
+$border-color: #AEBBC7
+
+
+@mixin posicionamiento($param1:null, $param2:null, $param3:null, $param4:null, $param5:null, $param6:null)
+    display: $param1
+    flex-direction: $param2
+    justify-content: $param3
+    align-items: $param4
+    width: $param5
+    height: $param6 
+
+.barraNavegacion
+    @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 100%, $param6: 100px)
+    border-bottom: 1px solid $border-color 
+    &_logo
+        width: 250px
+    &_menu
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: null, $param6: 100%)
+        list-style: none
+        &_lista
+            @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: null, $param6: 100%)
+            border-right: 1px solid $border-color
+            padding-right: 20px
+            padding-left: 20px
+        &_lista:hover
+            background: $border-color    
+
+.barraNavegacion_menu_lista img 
+    width: 30px
+    margin-right: 20px
+            
+        
+        
+.contenedor
+    width: 100%
+    &_seccion1
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 100%, $param6: null,)
+        &_background
+            width: 60%
+
+.contenedor_seccion2
+    background: $bg-darkblue
+    @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 100%, $param6: 350px)
+    &_seguimiento
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 50%, $param6: null)
+        gap: 15px
+        margin-left: 200px
+        &_img
+            width: 80px
+        &_input
+            width: 250px
+            height: 35px
+            margin-top: 20px 
+            outline: none
+        &_input:focus
+            border-color: #FE7019 
+        &_boton
+            width: 100px
+            height: 35px
+            background-color: #d35e15 
+            border: none
+        &_boton:hover
+            background-color: #FE7019 
+        &_parrafo
+            padding-top: 20px
+            width: 70%
+            color: white
+    &_busqueda
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 50%, $param6: null)
+        gap: 15px
+        margin-right: 200px
+
+.contenedor_seccion3
+    background-color: #F0F1F1
+    &_contenido
+        @include posicionamiento($param1: flex, $param2: column, $param3: center, $param4: center)
+        gap: 20px
+    &_titulo
+        color: $bg-darkblue
+        font-size: 2rem
+        padding: 20px
+    &_parrafo
+        color: gray
+        font-size: 1.1rem
+    &_celeritas
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
+        padding: 50px
+        gap: 20px
+    &_celeritas img
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
+        padding: 20px
+
+
+.contenedor_seccion3_celeritas div p 
+    width: 300px
+
+.contenedor_seccion4
+    @include posicionamiento($param1: flex, $param2: column, $param3: center, $param4: center)
+    padding: 50px
+    &_titulo
+        font-size: 2rem
+        color: $bg-darkblue
+        padding: 40px
+    &_cont1
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
+        &_img
+            border: 2px solid $border-color
+            box-shadow: 0px 2px 8px rgb(122, 122, 122)
+    &_cont2
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
+    &_cont3
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
+
+.contenedor_seccion4_cont1 ul li 
+    font-size: 1.4rem
+    width: 90%
+
+.contenedor_seccion4_cont2 ul li 
+    font-size: 1.4rem
+    width: 90%
+
+.contenedor_seccion4_cont3 ul li 
+    font-size: 1.4rem
+    width: 90%
+    margin-right: 170px
+
+.footer
+    @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center)
+    width: 100%
+    height: 320px
+    gap: 30px
+    background-color: $bg-darkblue
+    &_titulo
+        padding: 30px
+        color: white
+        font-size: 1.4rem
+        font-weight: bold
+    &_lista
+        list-style: none
+        padding: 10px
+        color: $border-color
+    &_img
+        @include posicionamiento($param1: flex, $param2: null, $param3: center, $param4: center, $param5: 300, $param6: 300)
+        background-color: white
+        border-radius: 50%
+        &_logo
+            width: 300px
+        
+
+
+
